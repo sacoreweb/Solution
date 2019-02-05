@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Core.Data.Repository" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ASPNetModulos">
+    <Key>
+      <PropertyRef Name="IdModulo" />
+    </Key>
+    <Property Name="IdModulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescripcionModulo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="ASPNetRolesPermisos" Relationship="Self.FK_ASPNetPermisosByRol_ASPNetModulos" FromRole="ASPNetModulos" ToRole="ASPNetRolesPermisos" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ASPNetRolesPermisos" Relationship="Self.FK_ASPNetPermisosByRol_AspNetRoles" FromRole="AspNetRoles" ToRole="ASPNetRolesPermisos" />
+    <NavigationProperty Name="AspNetUserRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetRoles" ToRole="AspNetUserRoles" />
+  </EntityType>
+  <EntityType Name="ASPNetRolesPermisos">
+    <Key>
+      <PropertyRef Name="IdModulo" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="IdModulo" Type="Int32" Nullable="false" />
+    <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Entrar" Type="Boolean" />
+    <Property Name="Grabar" Type="Boolean" />
+    <Property Name="Editar" Type="Boolean" />
+    <Property Name="Eliminar" Type="Boolean" />
+    <Property Name="Anular" Type="Boolean" />
+    <Property Name="Consultar" Type="Boolean" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="UsuarioCreacion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ASPNetModulos" Relationship="Self.FK_ASPNetPermisosByRol_ASPNetModulos" FromRole="ASPNetRolesPermisos" ToRole="ASPNetModulos" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.FK_ASPNetPermisosByRol_AspNetRoles" FromRole="ASPNetRolesPermisos" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="AspNetRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetUserRoles" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="tbl_CatalogoProductos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nit" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Referencia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Nombre_Producto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Referencia_Proveedor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FechaInicial" Type="DateTime" Precision="0" />
+    <Property Name="FechaFinal" Type="DateTime" Precision="0" />
+    <Property Name="ValorNegociado" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="UsuarioCreacion" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Imagen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tbl_CCostosCompradores">
+    <Key>
+      <PropertyRef Name="IdCentroCostos" />
+    </Key>
+    <Property Name="IdCentroCostos" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescripcionCentroCostos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ValorPresupuesto" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Cedula" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_Transportadoras">
+    <Key>
+      <PropertyRef Name="IdTransportadora" />
+    </Key>
+    <Property Name="IdTransportadora" Type="Int32" Nullable="false" />
+    <Property Name="DescripcionTransportadora" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="3" />
+    <Property Name="UsuarioCreacion" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_TrazabilidadPedidos" Relationship="Self.FK_tbl_TrazabilidadPedidos_tbl_Transportadoras" FromRole="tbl_Transportadoras" ToRole="tbl_TrazabilidadPedidos" />
+  </EntityType>
+  <EntityType Name="tbl_TrazabilidadPedidos">
+    <Key>
+      <PropertyRef Name="IdTrazabilidad" />
+    </Key>
+    <Property Name="IdTrazabilidad" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumeroPedido" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaDespacho" Type="DateTime" Precision="0" />
+    <Property Name="FechaEntrega" Type="DateTime" Precision="0" />
+    <Property Name="NumeroGuia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IdTransportadora" Type="Int32" Nullable="false" />
+    <Property Name="LinkSeguimiento" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="FechaCreacion" Type="DateTime" Precision="0" />
+    <Property Name="UsuarioCreacion" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Transportadoras" Relationship="Self.FK_tbl_TrazabilidadPedidos_tbl_Transportadoras" FromRole="tbl_TrazabilidadPedidos" ToRole="tbl_Transportadoras" />
+  </EntityType>
+  <Association Name="FK_ASPNetPermisosByRol_ASPNetModulos">
+    <End Role="ASPNetModulos" Type="Self.ASPNetModulos" Multiplicity="1" />
+    <End Role="ASPNetRolesPermisos" Type="Self.ASPNetRolesPermisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASPNetModulos">
+        <PropertyRef Name="IdModulo" />
+      </Principal>
+      <Dependent Role="ASPNetRolesPermisos">
+        <PropertyRef Name="IdModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASPNetPermisosByRol_AspNetRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1" />
+    <End Role="ASPNetRolesPermisos" Type="Self.ASPNetRolesPermisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ASPNetRolesPermisos">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_TrazabilidadPedidos_tbl_Transportadoras">
+    <End Role="tbl_Transportadoras" Type="Self.tbl_Transportadoras" Multiplicity="1" />
+    <End Role="tbl_TrazabilidadPedidos" Type="Self.tbl_TrazabilidadPedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Transportadoras">
+        <PropertyRef Name="IdTransportadora" />
+      </Principal>
+      <Dependent Role="tbl_TrazabilidadPedidos">
+        <PropertyRef Name="IdTransportadora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FactuContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ASPNetModulos" EntityType="Self.ASPNetModulos" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" />
+    <EntitySet Name="ASPNetRolesPermisos" EntityType="Self.ASPNetRolesPermisos" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" />
+    <EntitySet Name="tbl_CatalogoProductos" EntityType="Self.tbl_CatalogoProductos" />
+    <EntitySet Name="tbl_CCostosCompradores" EntityType="Self.tbl_CCostosCompradores" />
+    <EntitySet Name="tbl_Transportadoras" EntityType="Self.tbl_Transportadoras" />
+    <EntitySet Name="tbl_TrazabilidadPedidos" EntityType="Self.tbl_TrazabilidadPedidos" />
+    <AssociationSet Name="FK_ASPNetPermisosByRol_ASPNetModulos" Association="Self.FK_ASPNetPermisosByRol_ASPNetModulos">
+      <End Role="ASPNetModulos" EntitySet="ASPNetModulos" />
+      <End Role="ASPNetRolesPermisos" EntitySet="ASPNetRolesPermisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASPNetPermisosByRol_AspNetRoles" Association="Self.FK_ASPNetPermisosByRol_AspNetRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="ASPNetRolesPermisos" EntitySet="ASPNetRolesPermisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_TrazabilidadPedidos_tbl_Transportadoras" Association="Self.FK_tbl_TrazabilidadPedidos_tbl_Transportadoras">
+      <End Role="tbl_Transportadoras" EntitySet="tbl_Transportadoras" />
+      <End Role="tbl_TrazabilidadPedidos" EntitySet="tbl_TrazabilidadPedidos" />
+    </AssociationSet>
+    <EntitySet Name="bodegas" EntityType="Core.Data.Repository.bodegas" />
+    <EntitySet Name="vendedor" EntityType="Core.Data.Repository.vendedor" />
+    <FunctionImport Name="GetVendedores" ReturnType="Collection(Core.Data.Repository.GetVendedores_Result)">
+      <Parameter Name="Nit" Mode="In" Type="String" />
+      <Parameter Name="idBodega" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Get_ProductosByReferencia" ReturnType="Collection(Core.Data.Repository.Get_ProductosByReferencia_Result)" />
+    <EntitySet Name="pedidosc1W_2000" EntityType="Core.Data.Repository.pedidosc1W_2000" />
+    <EntitySet Name="pedidosc2W_2000" EntityType="Core.Data.Repository.pedidosc2W_2000" />
+    <AssociationSet Name="FK_pedidosc2W_2000_pedidosc1W_2000" Association="Core.Data.Repository.FK_pedidosc2W_2000_pedidosc1W_2000">
+      <End Role="pedidosc1W_2000" EntitySet="pedidosc1W_2000" />
+      <End Role="pedidosc2W_2000" EntitySet="pedidosc2W_2000" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="bodegas">
+    <Key>
+      <PropertyRef Name="bodega" />
+    </Key>
+    <Property Name="bodega" Type="String" Nullable="false" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="cuentacontable" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CENTROCOSTOS" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="NUMEROMAQUINA" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="DIAS" Type="Decimal" Precision="3" Scale="0" />
+    <Property Name="CODIGORETEICA" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="DIRECCIONBODEGA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TELEFONOBODEGA" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="FAXBODEGA" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="vendedor">
+    <Key>
+      <PropertyRef Name="vendedor1" />
+    </Key>
+    <Property Name="vendedor1" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="nombre" Type="String" Nullable="false" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="cedula" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_ingreso" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="comision" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="recaudo_0" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="recaudo_30" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="recaudo_60" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="recaudo_90" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="FECHANACIMIENTO" Type="DateTime" Precision="3" />
+    <Property Name="LOCALIZACION" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="CLASIFICACION" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="PERSONA" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="SEXO" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="CATEGORIA" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="ZONA" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="LCINCUENTAYOCHO" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="VENDEDORINT" Type="String" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="BODEGA" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="TIPOVENDEDOR" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="COMERCIO" Type="Int32" />
+    <Property Name="NOMBREVENDEDOR" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="PUNTODEVENTA" Type="Int32" />
+    <Property Name="GRUPOVENDEDOR" Type="Int32" />
+    <Property Name="GRUPOSANTANDER" Type="Int32" />
+    <Property Name="EXTERNOTELEMERCADEO" Type="Int32" />
+    <Property Name="OBSERVACION" Type="String" MaxLength="50" FixedLength="true" Unicode="false" />
+    <Property Name="BANDERA" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="COMISIONPORZONA" Type="Int32" />
+    <Property Name="COPIAS" Type="Int32" />
+    <Property Name="EXCLUIRVENDEDOROH" Type="Int32" />
+    <Property Name="CONTRASEÑA" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="CODIGOIND" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="CORREODELVENDEDOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CELULAR" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <ComplexType Name="GetVendedores_Result">
+    <Property Type="String" Name="SucursalNissan" Nullable="true" MaxLength="80" />
+    <Property Type="String" Name="Vendedor" Nullable="true" MaxLength="4" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="CorreodelVendedor" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="vALOR" Nullable="true" MaxLength="118" />
+    <Property Type="String" Name="EmailVendedorInterno" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="Get_ProductosByReferencia_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="Nit" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Referencia" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Nombre_Producto" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="Referencia_Proveedor" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="FechaInicial" Nullable="true" />
+    <Property Type="DateTime" Name="FechaFinal" Nullable="true" />
+    <Property Type="Decimal" Name="ValorNegociado" Nullable="false" Precision="18" Scale="2" />
+    <Property Type="DateTime" Name="FechaCreacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UsuarioCreacion" Nullable="true" MaxLength="128" />
+    <Property Type="Decimal" Name="PORCENTAJEIVA" Nullable="true" Precision="5" Scale="2" />
+  </ComplexType>
+  <EntityType Name="pedidosc1W_2000">
+    <Key>
+      <PropertyRef Name="numero" />
+    </Key>
+    <Property Name="numero" Type="String" Nullable="false" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="mes" Type="String" Nullable="false" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="anulado" Type="Int32" Nullable="false" />
+    <Property Name="fechaDespacho" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="nit" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="vendedor" Type="String" Nullable="false" MaxLength="4" FixedLength="true" Unicode="false" />
+    <Property Name="iva" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="valor" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="descuento" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="estado" Type="Boolean" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UsuarioCreacion" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ZONA" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="prefijo" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="contacto" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="BODEGA" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="OBSERVACIONES" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="pedidosc2W_2000" Relationship="Core.Data.Repository.FK_pedidosc2W_2000_pedidosc1W_2000" FromRole="pedidosc1W_2000" ToRole="pedidosc2W_2000" />
+  </EntityType>
+  <EntityType Name="pedidosc2W_2000">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="22" FixedLength="true" Unicode="false" />
+    <Property Name="numero" Type="String" Nullable="false" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="referencia" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="valor" Type="Decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="cantidad" Type="Decimal" Precision="12" Scale="5" />
+    <Property Name="descuento" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="anulado" Type="Int32" Nullable="false" />
+    <Property Name="tarifaiva" Type="Decimal" Nullable="false" Precision="5" Scale="2" />
+    <Property Name="ccostos" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="pedidosc1W_2000" Relationship="Core.Data.Repository.FK_pedidosc2W_2000_pedidosc1W_2000" FromRole="pedidosc2W_2000" ToRole="pedidosc1W_2000" />
+  </EntityType>
+  <Association Name="FK_pedidosc2W_2000_pedidosc1W_2000">
+    <End Type="Core.Data.Repository.pedidosc1W_2000" Role="pedidosc1W_2000" Multiplicity="1" />
+    <End Type="Core.Data.Repository.pedidosc2W_2000" Role="pedidosc2W_2000" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidosc1W_2000">
+        <PropertyRef Name="numero" />
+      </Principal>
+      <Dependent Role="pedidosc2W_2000">
+        <PropertyRef Name="numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

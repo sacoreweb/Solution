@@ -1,0 +1,108 @@
+﻿@*@model Core.Domain.ViewModel.tbl_CatalogoProductosModel*@
+@using Core.Domain.ViewModel;
+@model pedidosc1W_2000Model
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Pedido</h2>
+
+<div class="row">
+    @*<div class="col-lg-3">Numero Pedido: @Html.TextBoxFor(model => model.NUMEROPEDIDO, new { @class = "form-control" })</div>*@
+    <div id="divFecha" class="col-lg-4">
+        Fecha Documento: @Html.TextBoxFor(model => model.fecha, new { @class = "form-control date-picker" }) 
+        <span id="lblFecha" class="label label-danger" style="display:none;">Campo Requerido</span>
+    </div>
+    <div id="divBodega" class="col-lg-4">
+        Bodega: @Html.DropDownListFor(model => model.BODEGA, new SelectList(Model.Bodegas, "bodega", "nombre"), "--Seleccione Bodega--", new { @class = "form-control" })
+        <span id="lblBodega" class="label label-danger" style="display:none;">Campo Requerido</span>
+    </div>
+    <div id="divVendedor" class="col-lg-4">
+        Vendedor: @Html.DropDownListFor(model => model.vendedor, new SelectList(""), "--Seleccione Vendedor--", new { @class = "form-control" })
+        <span id="lblVendedor" class="label label-danger" style="display:none;">Campo Requerido</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">Observaciones: @Html.TextAreaFor(model => model.OBSERVACIONES, new { @class = "form-control" })</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4"><label class="alert-success">Sub Total:</label> <label id="lblSubTotal" class="alert-success"></label></div>
+    <div class="col-lg-4"><label class="alert-success">Total Iva: </label> <label id="lblTotalIva" class="alert-success"></label></div>
+    <div class="col-lg-4"><label class="alert-success">Total General: </label> <label id="lblTotGeneral" class="alert-success"></label></div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <h2>Detalle</h2>
+    </div>
+</div>
+<div class="row">
+    <div id="divNomProd" class="col-lg-3">
+        Producto: @Html.EditorFor(model => model.Nombre_Producto, new { htmlAttributes = new { @class = "form-control" } })
+        <span id="lblNomProd" style="display:none;" class="label label-danger">Campo Requerido</span>
+    </div>
+    <div id="divCantProd" class="col-lg-3">
+        Cantidad: <input type="text" id="cantidadProd" value="" class="form-control" />
+        <span id="lblCantProd" style="display:none;" class="label label-danger">Campo Requerido</span>
+    </div>
+    <div class="col-lg-3">
+        Valor: <input type="text" disabled="disabled" id="valorProd" value="" class="form-control" />
+    </div>
+    <div class="col-lg-3">
+        Iva: <input type="text" id="ivaProd" value="" disabled="disabled" class="form-control"/>
+    </div>
+    <input type="hidden" id="referenciaProd" value="" />
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <br />
+        <button id="btnAgregar" type="button" class="btn btn-primary btn-sm">Agregar</button>
+        <button id="btnGrabar" type="button" class="btn btn-success btn-sm">Grabar</button>
+        <button type="button" class="btn btn-danger btn-sm" onclick="window.location.href = '/Home/Index'">Cancelar</button>
+        <br />
+        <span id="lblTable" class="label label-danger" style="display:none;">No hay productos registrados</span>
+        <br />
+    </div>
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <table id="tblPedidos" class="table" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Referencia</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Valor Unitario</th>
+                    <th>Iva</th>
+                    <th>Sub Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (pedidosc2W_2000Model customer in Model.pedidosc2W_2000)
+                {
+                    <tr>
+                        <th>
+                            <button type="button" value="Remove" class="btn btn-link" onclick="Remove(this)">Eliminar</button>
+                        </th>
+                        <td>@customer.referencia</td>
+                        <td>@customer.descripcion</td>
+                        <td>@customer.cantidad</td>
+                        <td>@customer.valor</td>
+                        <td>@customer.tarifaiva</td>
+                        <td>@customer.SUBTOTAL</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+

@@ -1,0 +1,5 @@
+E:\Proyecto EYE\Core.BackEnd\Core.Data\bin\Debug\Core.Data.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data\bin\Debug\Core.Data.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Data\obj\Debug\Core.Data.csprojResolveAssemblyReference.cache
+E:\Proyecto EYE\Core.BackEnd\Core.Data\obj\Debug\Core.Data.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data\obj\Debug\Core.Data.pdb

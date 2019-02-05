@@ -1,0 +1,164 @@
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\ApplicationInsights.config
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\csc.exe
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\System.Collections.Immutable.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\System.Reflection.Metadata.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\vbc.exe
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\VBCSCompiler.exe
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\roslyn\VBCSCompiler.exe.config
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\eCommerceAPP.dll.config
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\eCommerceAPP.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\eCommerceAPP.pdb
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Antlr3.Runtime.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\EntityFramework.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\EntityFramework.SqlServer.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.Agent.Intercept.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.DependencyCollector.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.Web.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.WindowsServer.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.ApplicationInsights.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AspNet.Identity.Core.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Cookies.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Facebook.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Google.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.OAuth.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Twitter.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Web.Infrastructure.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Newtonsoft.Json.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Owin.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Helpers.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Mvc.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Optimization.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Razor.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.WebPages.Deployment.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.WebPages.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.WebPages.Razor.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\WebGrease.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.DependencyCollector.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.Web.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AI.WindowsServer.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.ApplicationInsights.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Helpers.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Mvc.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Optimization.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.Razor.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.WebPages.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.WebPages.Deployment.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\System.Web.WebPages.Razor.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Antlr3.Runtime.pdb
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Newtonsoft.Json.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\EntityFramework.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\EntityFramework.SqlServer.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AspNet.Identity.Core.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Facebook.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Cookies.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.OAuth.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Google.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.Twitter.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\obj\Debug\eCommerceAPP.csprojResolveAssemblyReference.cache
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\obj\Debug\eCommerceAPP.dll
+D:\ProyectosDesarrolloE&E\MVC\eCommerceAPP\eCommerceAPP\obj\Debug\eCommerceAPP.pdb
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\ApplicationInsights.config
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\csc.exe
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\System.Collections.Immutable.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\System.Reflection.Metadata.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\vbc.exe
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\VBCSCompiler.exe
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\roslyn\VBCSCompiler.exe.config
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\eCommerceAPP.dll.config
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\eCommerceAPP.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\eCommerceAPP.pdb
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Antlr3.Runtime.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\EntityFramework.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\EntityFramework.SqlServer.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.DependencyCollector.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.Web.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.WindowsServer.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.ApplicationInsights.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Google.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Web.Infrastructure.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Newtonsoft.Json.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Owin.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Helpers.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Mvc.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Optimization.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Razor.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.WebPages.Deployment.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.WebPages.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.WebPages.Razor.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\WebGrease.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.DependencyCollector.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.Web.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AI.WindowsServer.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.ApplicationInsights.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Helpers.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Mvc.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Optimization.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.Razor.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.WebPages.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.WebPages.Deployment.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\System.Web.WebPages.Razor.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Antlr3.Runtime.pdb
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Newtonsoft.Json.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\EntityFramework.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\EntityFramework.SqlServer.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Google.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Proyecto EYE\Core.Web\eCommerceAPP\obj\Debug\eCommerceAPP.csprojResolveAssemblyReference.cache
+E:\Proyecto EYE\Core.Web\eCommerceAPP\obj\Debug\eCommerceAPP.dll
+E:\Proyecto EYE\Core.Web\eCommerceAPP\obj\Debug\eCommerceAPP.pdb

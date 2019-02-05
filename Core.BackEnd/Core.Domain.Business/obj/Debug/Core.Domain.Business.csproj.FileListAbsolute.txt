@@ -1,0 +1,15 @@
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Domain.Business.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Domain.Business.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\AutoMapper.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Data.Repository.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Domain.ViewModel.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Entity.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\EntityFramework.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Data.Repository.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Domain.ViewModel.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\Core.Entity.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\AutoMapper.xml
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\bin\Debug\EntityFramework.xml
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\obj\Debug\Core.Domain.Business.csprojResolveAssemblyReference.cache
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\obj\Debug\Core.Domain.Business.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.Business\obj\Debug\Core.Domain.Business.pdb

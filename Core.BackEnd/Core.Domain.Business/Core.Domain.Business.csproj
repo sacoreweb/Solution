@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8939836-E02A-4EA2-8109-920E03B8D7B7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.Domain.Business</RootNamespace>
+    <AssemblyName>Core.Domain.Business</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BodegaBusiness.cs" />
+    <Compile Include="CatalogoProductosBusiness.cs" />
+    <Compile Include="CCostosCompradoresBusinees.cs" />
+    <Compile Include="Interfaces\IBodegaBusiness.cs" />
+    <Compile Include="Interfaces\ICatalogoProductosBusiness.cs" />
+    <Compile Include="Interfaces\ICCostosCompradoresBusinees.cs" />
+    <Compile Include="Interfaces\IPedidosc1W_2000Business.cs" />
+    <Compile Include="Interfaces\IPedidosc2W_2000Business.cs" />
+    <Compile Include="Interfaces\ITransportadorasBusiness.cs" />
+    <Compile Include="Interfaces\ITrazabilidadPedidosBusiness.cs" />
+    <Compile Include="Interfaces\IVendedorBusiness.cs" />
+    <Compile Include="Pedidosc1W_2000Business.cs" />
+    <Compile Include="Pedidosc2W_2000Business.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransportadorasBusiness.cs" />
+    <Compile Include="TrazabilidadPedidosBusiness.cs" />
+    <Compile Include="VendedorBusiness.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Data.Repository\Core.Data.Repository.csproj">
+      <Project>{D8E921FC-B5FF-44E5-B79E-DB8302DD99BC}</Project>
+      <Name>Core.Data.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Domain.ViewModel\Core.Domain.ViewModel.csproj">
+      <Project>{6A30D7FB-12BF-4EE7-9A62-3EBE60D39178}</Project>
+      <Name>Core.Domain.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core.Entity\Core.Domain.Entity.csproj">
+      <Project>{6A08563C-4B54-4289-8837-623AB783D070}</Project>
+      <Name>Core.Domain.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

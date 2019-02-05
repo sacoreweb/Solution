@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Core.Data.Repository.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ASPNetModulos">
+    <Key>
+      <PropertyRef Name="IdModulo" />
+    </Key>
+    <Property Name="IdModulo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionModulo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="bit" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ASPNetRolesPermisos">
+    <Key>
+      <PropertyRef Name="IdModulo" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="IdModulo" Type="int" Nullable="false" />
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Entrar" Type="bit" />
+    <Property Name="Grabar" Type="bit" />
+    <Property Name="Editar" Type="bit" />
+    <Property Name="Eliminar" Type="bit" />
+    <Property Name="Anular" Type="bit" />
+    <Property Name="Consultar" Type="bit" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="UsuarioCreacion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bodegas">
+    <Key>
+      <PropertyRef Name="bodega" />
+    </Key>
+    <Property Name="bodega" Type="char" MaxLength="3" Nullable="false" />
+    <Property Name="nombre" Type="char" MaxLength="30" Nullable="false" />
+    <Property Name="cuentacontable" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="CENTROCOSTOS" Type="char" MaxLength="5" />
+    <Property Name="NUMEROMAQUINA" Type="char" MaxLength="20" />
+    <Property Name="DIAS" Type="numeric" Precision="3" Scale="0" />
+    <Property Name="CODIGORETEICA" Type="char" MaxLength="3" />
+    <Property Name="DIRECCIONBODEGA" Type="varchar" MaxLength="50" />
+    <Property Name="TELEFONOBODEGA" Type="varchar" MaxLength="20" />
+    <Property Name="FAXBODEGA" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="pedidosc1W_2000">
+    <Key>
+      <PropertyRef Name="numero" />
+    </Key>
+    <Property Name="numero" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="mes" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="fecha" Type="datetime" Nullable="false" />
+    <Property Name="anulado" Type="int" Nullable="false" />
+    <Property Name="fechaDespacho" Type="datetime" Nullable="false" />
+    <Property Name="nit" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="vendedor" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="iva" Type="numeric" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="valor" Type="numeric" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="descuento" Type="numeric" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="estado" Type="bit" />
+    <Property Name="FechaCreacion" Type="datetime" Nullable="false" />
+    <Property Name="UsuarioCreacion" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ZONA" Type="char" MaxLength="6" />
+    <Property Name="prefijo" Type="char" MaxLength="3" />
+    <Property Name="contacto" Type="char" MaxLength="60" />
+    <Property Name="BODEGA" Type="char" MaxLength="3" />
+    <Property Name="OBSERVACIONES" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="pedidosc2W_2000">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="char" MaxLength="22" Nullable="false" />
+    <Property Name="numero" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="referencia" Type="char" MaxLength="20" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="70" />
+    <Property Name="valor" Type="numeric" Precision="14" Scale="2" Nullable="false" />
+    <Property Name="cantidad" Type="numeric" Precision="12" Scale="5" />
+    <Property Name="descuento" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="anulado" Type="int" Nullable="false" />
+    <Property Name="tarifaiva" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="ccostos" Type="varchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_CatalogoProductos">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nit" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Referencia" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Nombre_Producto" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Referencia_Proveedor" Type="varchar" MaxLength="20" />
+    <Property Name="FechaInicial" Type="date" />
+    <Property Name="FechaFinal" Type="date" />
+    <Property Name="ValorNegociado" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Imagen" Type="varchar" MaxLength="50" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="UsuarioCreacion" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="tbl_CCostosCompradores">
+    <Key>
+      <PropertyRef Name="IdCentroCostos" />
+    </Key>
+    <Property Name="IdCentroCostos" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescripcionCentroCostos" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ValorPresupuesto" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Cedula" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Transportadoras">
+    <Key>
+      <PropertyRef Name="IdTransportadora" />
+    </Key>
+    <Property Name="IdTransportadora" Type="int" Nullable="false" />
+    <Property Name="DescripcionTransportadora" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estado" Type="bit" />
+    <Property Name="FechaCreacion" Type="datetime" />
+    <Property Name="UsuarioCreacion" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="tbl_TrazabilidadPedidos">
+    <Key>
+      <PropertyRef Name="IdTrazabilidad" />
+    </Key>
+    <Property Name="IdTrazabilidad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumeroPedido" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="FechaDespacho" Type="date" />
+    <Property Name="FechaEntrega" Type="date" />
+    <Property Name="NumeroGuia" Type="varchar" MaxLength="20" />
+    <Property Name="IdTransportadora" Type="int" Nullable="false" />
+    <Property Name="LinkSeguimiento" Type="varchar" MaxLength="200" />
+    <Property Name="FechaCreacion" Type="date" />
+    <Property Name="UsuarioCreacion" Type="nvarchar" MaxLength="128" />
+  </EntityType>
+  <EntityType Name="vendedor">
+    <Key>
+      <PropertyRef Name="vendedor" />
+    </Key>
+    <Property Name="vendedor" Type="char" MaxLength="4" Nullable="false" />
+    <Property Name="nombre" Type="char" MaxLength="30" Nullable="false" />
+    <Property Name="cedula" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="fecha_ingreso" Type="datetime" Nullable="false" />
+    <Property Name="comision" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="recaudo_0" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="recaudo_30" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="recaudo_60" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="recaudo_90" Type="numeric" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="FECHANACIMIENTO" Type="datetime" />
+    <Property Name="LOCALIZACION" Type="char" MaxLength="5" />
+    <Property Name="CLASIFICACION" Type="char" MaxLength="5" />
+    <Property Name="PERSONA" Type="char" MaxLength="5" />
+    <Property Name="SEXO" Type="char" MaxLength="1" />
+    <Property Name="CATEGORIA" Type="char" MaxLength="5" />
+    <Property Name="ZONA" Type="char" MaxLength="2" />
+    <Property Name="LCINCUENTAYOCHO" Type="char" MaxLength="6" />
+    <Property Name="VENDEDORINT" Type="char" MaxLength="4" />
+    <Property Name="BODEGA" Type="char" MaxLength="3" />
+    <Property Name="TIPOVENDEDOR" Type="numeric" Precision="1" Scale="0" />
+    <Property Name="COMERCIO" Type="int" />
+    <Property Name="NOMBREVENDEDOR" Type="char" MaxLength="50" />
+    <Property Name="PUNTODEVENTA" Type="int" />
+    <Property Name="GRUPOVENDEDOR" Type="int" />
+    <Property Name="GRUPOSANTANDER" Type="int" />
+    <Property Name="EXTERNOTELEMERCADEO" Type="int" />
+    <Property Name="OBSERVACION" Type="char" MaxLength="50" />
+    <Property Name="BANDERA" Type="char" MaxLength="2" />
+    <Property Name="COMISIONPORZONA" Type="int" />
+    <Property Name="COPIAS" Type="int" />
+    <Property Name="EXCLUIRVENDEDOROH" Type="int" />
+    <Property Name="CONTRASEÑA" Type="varchar" MaxLength="8" />
+    <Property Name="CODIGOIND" Type="char" MaxLength="3" />
+    <Property Name="CORREODELVENDEDOR" Type="varchar" MaxLength="50" />
+    <Property Name="CELULAR" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_ASPNetPermisosByRol_ASPNetModulos">
+    <End Role="ASPNetModulos" Type="Self.ASPNetModulos" Multiplicity="1" />
+    <End Role="ASPNetRolesPermisos" Type="Self.ASPNetRolesPermisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ASPNetModulos">
+        <PropertyRef Name="IdModulo" />
+      </Principal>
+      <Dependent Role="ASPNetRolesPermisos">
+        <PropertyRef Name="IdModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ASPNetPermisosByRol_AspNetRoles">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1" />
+    <End Role="ASPNetRolesPermisos" Type="Self.ASPNetRolesPermisos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ASPNetRolesPermisos">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_pedidosc2W_2000_pedidosc1W_2000">
+    <End Role="pedidosc1W_2000" Type="Self.pedidosc1W_2000" Multiplicity="1" />
+    <End Role="pedidosc2W_2000" Type="Self.pedidosc2W_2000" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidosc1W_2000">
+        <PropertyRef Name="numero" />
+      </Principal>
+      <Dependent Role="pedidosc2W_2000">
+        <PropertyRef Name="numero" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_TrazabilidadPedidos_tbl_Transportadoras">
+    <End Role="tbl_Transportadoras" Type="Self.tbl_Transportadoras" Multiplicity="1" />
+    <End Role="tbl_TrazabilidadPedidos" Type="Self.tbl_TrazabilidadPedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Transportadoras">
+        <PropertyRef Name="IdTransportadora" />
+      </Principal>
+      <Dependent Role="tbl_TrazabilidadPedidos">
+        <PropertyRef Name="IdTransportadora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Get_ProductosByReferencia" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetVendedores" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Nit" Type="char" Mode="In" />
+    <Parameter Name="idBodega" Type="char" Mode="In" />
+  </Function>
+  <EntityContainer Name="CoreDataRepositoryStoreContainer">
+    <EntitySet Name="ASPNetModulos" EntityType="Self.ASPNetModulos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ASPNetRolesPermisos" EntityType="Self.ASPNetRolesPermisos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bodegas" EntityType="Self.bodegas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidosc1W_2000" EntityType="Self.pedidosc1W_2000" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidosc2W_2000" EntityType="Self.pedidosc2W_2000" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_CatalogoProductos" EntityType="Self.tbl_CatalogoProductos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_CCostosCompradores" EntityType="Self.tbl_CCostosCompradores" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Transportadoras" EntityType="Self.tbl_Transportadoras" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_TrazabilidadPedidos" EntityType="Self.tbl_TrazabilidadPedidos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vendedor" EntityType="Self.vendedor" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ASPNetPermisosByRol_ASPNetModulos" Association="Self.FK_ASPNetPermisosByRol_ASPNetModulos">
+      <End Role="ASPNetModulos" EntitySet="ASPNetModulos" />
+      <End Role="ASPNetRolesPermisos" EntitySet="ASPNetRolesPermisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ASPNetPermisosByRol_AspNetRoles" Association="Self.FK_ASPNetPermisosByRol_AspNetRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="ASPNetRolesPermisos" EntitySet="ASPNetRolesPermisos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_pedidosc2W_2000_pedidosc1W_2000" Association="Self.FK_pedidosc2W_2000_pedidosc1W_2000">
+      <End Role="pedidosc1W_2000" EntitySet="pedidosc1W_2000" />
+      <End Role="pedidosc2W_2000" EntitySet="pedidosc2W_2000" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_TrazabilidadPedidos_tbl_Transportadoras" Association="Self.FK_tbl_TrazabilidadPedidos_tbl_Transportadoras">
+      <End Role="tbl_Transportadoras" EntitySet="tbl_Transportadoras" />
+      <End Role="tbl_TrazabilidadPedidos" EntitySet="tbl_TrazabilidadPedidos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

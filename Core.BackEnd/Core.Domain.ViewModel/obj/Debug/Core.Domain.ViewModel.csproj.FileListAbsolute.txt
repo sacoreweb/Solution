@@ -1,0 +1,9 @@
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\obj\Debug\Core.Domain.ViewModel.csprojResolveAssemblyReference.cache
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\bin\Debug\Core.Domain.ViewModel.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\bin\Debug\Core.Domain.ViewModel.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\bin\Debug\AutoMapper.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\bin\Debug\Core.Entity.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\bin\Debug\Core.Entity.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\bin\Debug\AutoMapper.xml
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\obj\Debug\Core.Domain.ViewModel.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Domain.ViewModel\obj\Debug\Core.Domain.ViewModel.pdb

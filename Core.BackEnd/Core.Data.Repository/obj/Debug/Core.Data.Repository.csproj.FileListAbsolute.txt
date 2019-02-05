@@ -1,0 +1,16 @@
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\obj\Debug\Core.Data.Repository.csprojResolveAssemblyReference.cache
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Data.Repository.dll.config
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Data.Repository.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Data.Repository.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Domain.ViewModel.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Entity.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\EntityFramework.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\AutoMapper.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Domain.ViewModel.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\Core.Entity.pdb
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\EntityFramework.xml
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\bin\Debug\AutoMapper.xml
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\obj\Debug\Core.Data.Repository.dll
+E:\Proyecto EYE\Core.BackEnd\Core.Data.Repository\obj\Debug\Core.Data.Repository.pdb

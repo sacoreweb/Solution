@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CoreDataRepositoryStoreContainer" CdmEntityContainer="FactuContext">
+    <EntitySetMapping Name="ASPNetModulos">
+      <EntityTypeMapping TypeName="Core.Data.Repository.ASPNetModulos">
+        <MappingFragment StoreEntitySet="ASPNetModulos">
+          <ScalarProperty Name="IdModulo" ColumnName="IdModulo" />
+          <ScalarProperty Name="DescripcionModulo" ColumnName="DescripcionModulo" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="Core.Data.Repository.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ASPNetRolesPermisos">
+      <EntityTypeMapping TypeName="Core.Data.Repository.ASPNetRolesPermisos">
+        <MappingFragment StoreEntitySet="ASPNetRolesPermisos">
+          <ScalarProperty Name="IdModulo" ColumnName="IdModulo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Entrar" ColumnName="Entrar" />
+          <ScalarProperty Name="Grabar" ColumnName="Grabar" />
+          <ScalarProperty Name="Editar" ColumnName="Editar" />
+          <ScalarProperty Name="Eliminar" ColumnName="Eliminar" />
+          <ScalarProperty Name="Anular" ColumnName="Anular" />
+          <ScalarProperty Name="Consultar" ColumnName="Consultar" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserRoles">
+      <EntityTypeMapping TypeName="Core.Data.Repository.AspNetUserRoles">
+        <MappingFragment StoreEntitySet="AspNetUserRoles">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CatalogoProductos">
+      <EntityTypeMapping TypeName="Core.Data.Repository.tbl_CatalogoProductos">
+        <MappingFragment StoreEntitySet="tbl_CatalogoProductos">
+          <ScalarProperty Name="Imagen" ColumnName="Imagen" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nit" ColumnName="Nit" />
+          <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+          <ScalarProperty Name="Nombre_Producto" ColumnName="Nombre_Producto" />
+          <ScalarProperty Name="Referencia_Proveedor" ColumnName="Referencia_Proveedor" />
+          <ScalarProperty Name="FechaInicial" ColumnName="FechaInicial" />
+          <ScalarProperty Name="FechaFinal" ColumnName="FechaFinal" />
+          <ScalarProperty Name="ValorNegociado" ColumnName="ValorNegociado" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CCostosCompradores">
+      <EntityTypeMapping TypeName="Core.Data.Repository.tbl_CCostosCompradores">
+        <MappingFragment StoreEntitySet="tbl_CCostosCompradores">
+          <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+          <ScalarProperty Name="IdCentroCostos" ColumnName="IdCentroCostos" />
+          <ScalarProperty Name="DescripcionCentroCostos" ColumnName="DescripcionCentroCostos" />
+          <ScalarProperty Name="ValorPresupuesto" ColumnName="ValorPresupuesto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Transportadoras">
+      <EntityTypeMapping TypeName="Core.Data.Repository.tbl_Transportadoras">
+        <MappingFragment StoreEntitySet="tbl_Transportadoras">
+          <ScalarProperty Name="IdTransportadora" ColumnName="IdTransportadora" />
+          <ScalarProperty Name="DescripcionTransportadora" ColumnName="DescripcionTransportadora" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_TrazabilidadPedidos">
+      <EntityTypeMapping TypeName="Core.Data.Repository.tbl_TrazabilidadPedidos">
+        <MappingFragment StoreEntitySet="tbl_TrazabilidadPedidos">
+          <ScalarProperty Name="IdTrazabilidad" ColumnName="IdTrazabilidad" />
+          <ScalarProperty Name="NumeroPedido" ColumnName="NumeroPedido" />
+          <ScalarProperty Name="FechaDespacho" ColumnName="FechaDespacho" />
+          <ScalarProperty Name="FechaEntrega" ColumnName="FechaEntrega" />
+          <ScalarProperty Name="NumeroGuia" ColumnName="NumeroGuia" />
+          <ScalarProperty Name="IdTransportadora" ColumnName="IdTransportadora" />
+          <ScalarProperty Name="LinkSeguimiento" ColumnName="LinkSeguimiento" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bodegas">
+      <EntityTypeMapping TypeName="Core.Data.Repository.bodegas">
+        <MappingFragment StoreEntitySet="bodegas">
+          <ScalarProperty Name="FAXBODEGA" ColumnName="FAXBODEGA" />
+          <ScalarProperty Name="TELEFONOBODEGA" ColumnName="TELEFONOBODEGA" />
+          <ScalarProperty Name="DIRECCIONBODEGA" ColumnName="DIRECCIONBODEGA" />
+          <ScalarProperty Name="CODIGORETEICA" ColumnName="CODIGORETEICA" />
+          <ScalarProperty Name="DIAS" ColumnName="DIAS" />
+          <ScalarProperty Name="NUMEROMAQUINA" ColumnName="NUMEROMAQUINA" />
+          <ScalarProperty Name="CENTROCOSTOS" ColumnName="CENTROCOSTOS" />
+          <ScalarProperty Name="cuentacontable" ColumnName="cuentacontable" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="bodega" ColumnName="bodega" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vendedor">
+      <EntityTypeMapping TypeName="Core.Data.Repository.vendedor">
+        <MappingFragment StoreEntitySet="vendedor">
+          <ScalarProperty Name="CELULAR" ColumnName="CELULAR" />
+          <ScalarProperty Name="CORREODELVENDEDOR" ColumnName="CORREODELVENDEDOR" />
+          <ScalarProperty Name="CODIGOIND" ColumnName="CODIGOIND" />
+          <ScalarProperty Name="CONTRASEÑA" ColumnName="CONTRASEÑA" />
+          <ScalarProperty Name="EXCLUIRVENDEDOROH" ColumnName="EXCLUIRVENDEDOROH" />
+          <ScalarProperty Name="COPIAS" ColumnName="COPIAS" />
+          <ScalarProperty Name="COMISIONPORZONA" ColumnName="COMISIONPORZONA" />
+          <ScalarProperty Name="BANDERA" ColumnName="BANDERA" />
+          <ScalarProperty Name="OBSERVACION" ColumnName="OBSERVACION" />
+          <ScalarProperty Name="EXTERNOTELEMERCADEO" ColumnName="EXTERNOTELEMERCADEO" />
+          <ScalarProperty Name="GRUPOSANTANDER" ColumnName="GRUPOSANTANDER" />
+          <ScalarProperty Name="GRUPOVENDEDOR" ColumnName="GRUPOVENDEDOR" />
+          <ScalarProperty Name="PUNTODEVENTA" ColumnName="PUNTODEVENTA" />
+          <ScalarProperty Name="NOMBREVENDEDOR" ColumnName="NOMBREVENDEDOR" />
+          <ScalarProperty Name="COMERCIO" ColumnName="COMERCIO" />
+          <ScalarProperty Name="TIPOVENDEDOR" ColumnName="TIPOVENDEDOR" />
+          <ScalarProperty Name="BODEGA" ColumnName="BODEGA" />
+          <ScalarProperty Name="VENDEDORINT" ColumnName="VENDEDORINT" />
+          <ScalarProperty Name="LCINCUENTAYOCHO" ColumnName="LCINCUENTAYOCHO" />
+          <ScalarProperty Name="ZONA" ColumnName="ZONA" />
+          <ScalarProperty Name="CATEGORIA" ColumnName="CATEGORIA" />
+          <ScalarProperty Name="SEXO" ColumnName="SEXO" />
+          <ScalarProperty Name="PERSONA" ColumnName="PERSONA" />
+          <ScalarProperty Name="CLASIFICACION" ColumnName="CLASIFICACION" />
+          <ScalarProperty Name="LOCALIZACION" ColumnName="LOCALIZACION" />
+          <ScalarProperty Name="FECHANACIMIENTO" ColumnName="FECHANACIMIENTO" />
+          <ScalarProperty Name="recaudo_90" ColumnName="recaudo_90" />
+          <ScalarProperty Name="recaudo_60" ColumnName="recaudo_60" />
+          <ScalarProperty Name="recaudo_30" ColumnName="recaudo_30" />
+          <ScalarProperty Name="recaudo_0" ColumnName="recaudo_0" />
+          <ScalarProperty Name="comision" ColumnName="comision" />
+          <ScalarProperty Name="fecha_ingreso" ColumnName="fecha_ingreso" />
+          <ScalarProperty Name="cedula" ColumnName="cedula" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="vendedor1" ColumnName="vendedor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetVendedores" FunctionName="Core.Data.Repository.Store.GetVendedores">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Core.Data.Repository.GetVendedores_Result">
+          <ScalarProperty Name="SucursalNissan" ColumnName="SucursalNissan" />
+          <ScalarProperty Name="Vendedor" ColumnName="Vendedor" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="CorreodelVendedor" ColumnName="CorreodelVendedor" />
+          <ScalarProperty Name="vALOR" ColumnName="vALOR" />
+          <ScalarProperty Name="EmailVendedorInterno" ColumnName="EmailVendedorInterno" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Get_ProductosByReferencia" FunctionName="Core.Data.Repository.Store.Get_ProductosByReferencia">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Core.Data.Repository.Get_ProductosByReferencia_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nit" ColumnName="Nit" />
+          <ScalarProperty Name="Referencia" ColumnName="Referencia" />
+          <ScalarProperty Name="Nombre_Producto" ColumnName="Nombre_Producto" />
+          <ScalarProperty Name="Referencia_Proveedor" ColumnName="Referencia_Proveedor" />
+          <ScalarProperty Name="FechaInicial" ColumnName="FechaInicial" />
+          <ScalarProperty Name="FechaFinal" ColumnName="FechaFinal" />
+          <ScalarProperty Name="ValorNegociado" ColumnName="ValorNegociado" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="PORCENTAJEIVA" ColumnName="PORCENTAJEIVA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="pedidosc1W_2000">
+      <EntityTypeMapping TypeName="Core.Data.Repository.pedidosc1W_2000">
+        <MappingFragment StoreEntitySet="pedidosc1W_2000">
+          <ScalarProperty Name="OBSERVACIONES" ColumnName="OBSERVACIONES" />
+          <ScalarProperty Name="BODEGA" ColumnName="BODEGA" />
+          <ScalarProperty Name="contacto" ColumnName="contacto" />
+          <ScalarProperty Name="prefijo" ColumnName="prefijo" />
+          <ScalarProperty Name="ZONA" ColumnName="ZONA" />
+          <ScalarProperty Name="UsuarioCreacion" ColumnName="UsuarioCreacion" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="descuento" ColumnName="descuento" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="vendedor" ColumnName="vendedor" />
+          <ScalarProperty Name="nit" ColumnName="nit" />
+          <ScalarProperty Name="fechaDespacho" ColumnName="fechaDespacho" />
+          <ScalarProperty Name="anulado" ColumnName="anulado" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidosc2W_2000">
+      <EntityTypeMapping TypeName="Core.Data.Repository.pedidosc2W_2000">
+        <MappingFragment StoreEntitySet="pedidosc2W_2000">
+          <ScalarProperty Name="ccostos" ColumnName="ccostos" />
+          <ScalarProperty Name="tarifaiva" ColumnName="tarifaiva" />
+          <ScalarProperty Name="anulado" ColumnName="anulado" />
+          <ScalarProperty Name="descuento" ColumnName="descuento" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="referencia" ColumnName="referencia" />
+          <ScalarProperty Name="numero" ColumnName="numero" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
